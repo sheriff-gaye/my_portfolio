@@ -36,6 +36,8 @@ const Footer=()=>{
             <small>&copy; Sheriff Gaye 2023</small>
             
         </div>
+
+        123
         
     </footer>);
 }
