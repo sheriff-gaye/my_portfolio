@@ -18,7 +18,7 @@ const Portfolio = () => {
                     <img src={IMG1} alt="portfolio_image" />
 
                 </div>
-                <h3>This is a porfolio item title</h3>
+                <h3>School Website</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Quam exercitationem tempora minus quod dolores ad sunt reiciendis distinctio rerum id?
@@ -35,7 +35,7 @@ const Portfolio = () => {
                     <img src={IMG2} alt="portfolio_image" />
 
                 </div>
-                <h3>This is a porfolio item title</h3>
+                <h3>Blogging App</h3>
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -55,7 +55,7 @@ const Portfolio = () => {
                     <img src={IMG3} alt="portfolio_image" />
 
                 </div>
-                <h3>This is a porfolio item title</h3>
+                <h3>Gym Website</h3>
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -75,7 +75,7 @@ const Portfolio = () => {
                     <img src={IMG4} alt="portfolio_image" />
 
                 </div>
-                <h3>This is a porfolio item title</h3>
+                <h3>Portfolio Website</h3>
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -95,7 +95,7 @@ const Portfolio = () => {
                     <img src={IMG5} alt="portfolio_image" />
 
                 </div>
-                <h3>This is a porfolio item title</h3>
+                <h3>React Note App</h3>
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -115,7 +115,7 @@ const Portfolio = () => {
                     <img src={IMG6} alt="portfolio_image" />
 
                 </div>
-                <h3>This is a porfolio item title</h3>
+                <h3>Natures Yoghurt</h3>
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
