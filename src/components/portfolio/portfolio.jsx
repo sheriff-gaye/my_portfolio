@@ -1,138 +1,51 @@
 import React from "react";
-import "./portfolio.css"
-import IMG1 from "../../assets/p1.jpg"
-import IMG2 from "../../assets/p2.jpg"
-import IMG3 from "../../assets/p3.jpg"
-import IMG4 from "../../assets/p4.jpg"
-import IMG5 from "../../assets/p5.jpg"
-import IMG6 from "../../assets/p6.jpg"
-
+import "./portfolio.css";
+import { portfolio_data } from "./info";
 
 const Portfolio = () => {
-    return (<section id="portfolio">
-        <h5>My Recent Works</h5>
-        <h2>My Portfolio</h2>
-        <div className="container portfolio_container">
-            <article className="portfolio_item">
-                <div className="portfolio_item-image">
-                    <img src={IMG1} alt="portfolio_image" />
+  return (
+    <section id="portfolio">
+      <h5>My Recent Works</h5>
+      <h2>My Portfolio</h2>
+      <div className="container portfolio_container">
+        {portfolio_data.map(({ id, image, title, desc, demo_url, git_url }) => {
+          return (
+            <article className="portfolio_item" key={id}>
+              <div className="portfolio_item-image">
+                <img src={image} alt="portfolio_image" />
+              </div>
+              <h3>{title}</h3>
 
-                </div>
-                <h3>School Website</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Quam exercitationem tempora minus quod dolores ad sunt reiciendis distinctio rerum id?
-                </p>
-                <div className="portfolio_item-cta">
-                    <a href="" className="btn" target="_blank">Github</a>
-                    <a href="" className="btn btn-primary" target="_blank">Live Demo</a>
+              <p>{desc}</p>
 
-                </div>
+              <div className="portfolio_item-cta">
+                {git_url && (
+                  <a
+                    href={git_url}
+                    className="btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                  </a>
+                )}
+                {demo_url && (
+                  <a
+                    href={demo_url}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                )}
+              </div>
             </article>
-
-            <article className="portfolio_item">
-                <div className="portfolio_item-image">
-                    <img src={IMG2} alt="portfolio_image" />
-
-                </div>
-                <h3>Blogging App</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Quam exercitationem tempora minus quod dolores ad sunt reiciendis distinctio rerum id?
-                </p>
-
-                <div className="portfolio_item-cta">
-                    <a href="" className="btn" target="_blank">Github</a>
-                    <a href="" className="btn btn-primary" target="_blank">Live Demo</a>
-
-                </div>
-
-            </article>
-
-            <article className="portfolio_item">
-                <div className="portfolio_item-image">
-                    <img src={IMG3} alt="portfolio_image" />
-
-                </div>
-                <h3>Gym Website</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Quam exercitationem tempora minus quod dolores ad sunt reiciendis distinctio rerum id?
-                </p>
-
-                <div className="portfolio_item-cta">
-                    <a href="" className="btn" target="_blank">Github</a>
-                    <a href="" className="btn btn-primary" target="_blank">Live Demo</a>
-
-                </div>
-
-            </article>
-
-            <article className="portfolio_item">
-                <div className="portfolio_item-image">
-                    <img src={IMG4} alt="portfolio_image" />
-
-                </div>
-                <h3>Portfolio Website</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Quam exercitationem tempora minus quod dolores ad sunt reiciendis distinctio rerum id?
-                </p>
-
-                <div className="portfolio_item-cta">
-                    <a href="" className="btn" target="_blank">Github</a>
-                    <a href="" className="btn btn-primary" target="_blank">Live Demo</a>
-
-                </div>
-
-            </article>
-
-            <article className="portfolio_item">
-                <div className="portfolio_item-image">
-                    <img src={IMG5} alt="portfolio_image" />
-
-                </div>
-                <h3>React Note App</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Quam exercitationem tempora minus quod dolores ad sunt reiciendis distinctio rerum id?
-                </p>
-
-                <div className="portfolio_item-cta">
-                    <a href="" className="btn" target="_blank">Github</a>
-                    <a href="" className="btn btn-primary" target="_blank">Live Demo</a>
-
-                </div>
-
-            </article>
-
-            <article className="portfolio_item">
-                <div className="portfolio_item-image">
-                    <img src={IMG6} alt="portfolio_image" />
-
-                </div>
-                <h3>Natures Yoghurt</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Quam exercitationem tempora minus quod dolores ad sunt reiciendis distinctio rerum id?
-                </p>
-                
-                <div className="portfolio_item-cta">
-                    <a href="" className="btn" target="_blank">Github</a>
-                    <a href="" className="btn btn-primary" target="_blank">Live Demo</a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>);
-}
+          );
+        })}
+      </div>
+    </section>
+  );
+};
 
 export default Portfolio;
