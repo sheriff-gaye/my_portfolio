@@ -40,6 +40,16 @@
     margin-bottom: 1rem;
 }
 
+.filters{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  place-items: center;
+  padding-bottom: 2rem;
+
+}
+
 @media screen and (max-width:1024px) {
     .portfolio_container{
         grid-template-columns: 1fr 1fr;

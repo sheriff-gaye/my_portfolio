@@ -7,7 +7,13 @@ const Portfolio = () => {
     <section id="portfolio">
       <h5>My Recent Works</h5>
       <h2>My Portfolio</h2>
+      <div className="filters container">
+          <button className="btn btn-primary">Frontend</button>
+          <button className="btn btn-primary">Backend</button>
+          <button className="btn btn-primary">Fullstack</button>
+        </div>
       <div className="container portfolio_container">
+        
         {portfolio_data.map(({ id, image, title, desc, demo_url, git_url }) => {
           return (
             <article className="portfolio_item" key={id}>
