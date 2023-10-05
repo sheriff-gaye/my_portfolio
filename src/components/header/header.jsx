@@ -16,7 +16,6 @@ const Header=()=>{
             <h5 className="text-light">Software Developer</h5>
             <CTA/>
             <Social/>
-        
             
             <br/>
 

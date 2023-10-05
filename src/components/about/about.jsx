@@ -3,7 +3,7 @@ import "./about.css"
 import { FaAward } from "react-icons/fa"
 import { FiUsers } from "react-icons/fi"
 import { VscFolderLibrary } from "react-icons/vsc"
-import Me from "../../assets/sheriff2.jpeg"
+import Me from "../../assets/sheriff.jpeg"
 
 
 
