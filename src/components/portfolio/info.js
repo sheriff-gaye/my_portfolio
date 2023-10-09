@@ -13,7 +13,7 @@ export const portfolio_data=[
         "id":1,
         "image": require("../../assets/vermi.png"),
         "title": "Vermi Farm",
-        "stack":"Laravel , Livewire",
+        "stack":"Laravel , Livewire , SQL",
         "desc": "Vermi Farm: A leading name in sustainable agriculture, specializing in organic fertilizers and greenhouse farming.",
         "demo_url": "https://www.vermi-farm.org",
     },
@@ -21,7 +21,7 @@ export const portfolio_data=[
         "id":3,
         "image": require("../../assets/fit.jpeg"),
         "title": "Get Fit",
-        "stack":"React",
+        "stack":"React , Swiper Js",
         "desc": "Get Fit is a minimalist fitness center website with a gorgeous user interface, developed with standard React JS. The site highlights available fitness classes and personal trainers.",
         "demo_url": "https://sheriff-gaye.github.io/getfit",
         "git_url": "https://github.com/sheriff-gaye/getfit"
@@ -32,7 +32,7 @@ export const portfolio_data=[
         "id":6,
         "image": require("../../assets/natures2.jpeg"),
         "title": "Natures Yoghurt",
-        "stack":"Laravel , Livewire",
+        "stack":"Laravel , Livewire , SQL",
         "desc": "Natures Yoghurt is a yoghurt company with an eloquent UI and e-commerce functionality built with Laravel and Javascript.",
         "demo_url": "https://naturesyoghurt.com",
        
@@ -42,7 +42,7 @@ export const portfolio_data=[
         "id":9,
         "image": require("../../assets/client.png"),
         "title": "MyClientHub",
-        "stack":"Laravel , Livewire",
+        "stack":"Laravel , Livewire , SQL , Tailwind",
         "desc": "MyClientHub is a comprehensive CRM solution that helps businesses efficiently manage clients, projects, and tasks, streamlining communication and boosting productivity.",
         "demo_url": "",
         "git_url": "https://github.com/sheriff-gaye/laravel_crm"

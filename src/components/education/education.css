@@ -1,0 +1,60 @@
+
+
+.education_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+}
+.education{
+    background: var(--color-bg-variant);
+    padding: 2.4rem 3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    
+    
+}
+
+.education_container::after{
+    height: 100%;
+    width: 1px;
+    position: relative;
+    background-color: white;
+    left: -4rem;
+}
+.top{
+    color: var(--color-primary);
+}
+
+
+.date {
+  font-size: 0.875rem;
+  margin-left: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-light);
+}
+.title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: var(--color-primary);
+
+}
+
+.place {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--color-white);
+}
+.desc {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 200;
+  color: var(--color-light);
+}
+

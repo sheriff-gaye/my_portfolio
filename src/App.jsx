@@ -19,8 +19,8 @@ const App=()=>{
         <About/>
         <Experience/>
         <Services/>
-        <Portfolio/>
         <Education/>
+        <Portfolio/>
         <Testimonial/>
         <Contact/>
         <Footer/>
