@@ -5,24 +5,24 @@ export const educationData = [
         date: `Jan 2001 - Present`,
         title: "Business Information Technology",
         place: "Kwame Nkrumah University of Science and Technology",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia saepe quis soluta eos ex pariatur optio accusamus voluptatibus animi."
+        desc: "Relevant Courses - Database Management for Business , Computer Operating System , Introduction to Programming , Mobile Application Design , Introduction to Business Analytics  , Management Information Systems , Internet Technology for Business , Networking & Security"
     },
     {
         id: 2,
         category: "education",
-        date: "2021 - 2022",
+        date: "Feb 2021 -  Mar 2022",
         title: "Full Stack Software Engineering ",
         place: "Alx Africa (Remote)",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia saepe quis soluta eos ex pariatur optio accusamus voluptatibus animi."
+        desc: "Full Stack Software Engineering - C# , HTML , CSS , JavaScript , Typescript , React , Node ,  Python"
 
     },
     {
         id: 3,
         category: "education",
-        date: "Sep 2019 Dec 2020",
+        date: "Sep 2019 - Dec 2020",
         title: "Diploma in Information Technology",
         place: "Future Starts Now Gambia",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia saepe quis soluta eos ex pariatur optio accusamus voluptatibus animi."
+        desc: "Certificate and Diploma in Information Technology - Microsoft Word , Microsoft Excel , Microsoft Powerpoint , Microsoft Access"
 
     },
     {
@@ -31,17 +31,17 @@ export const educationData = [
         date: "Mar 2023 - Present",
         title: "Co Founder & Program Manager",
         place: "Fuller Developers",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia saepe quis soluta eos ex pariatur optio accusamus voluptatibus animi."
+        desc: "Offering mentorship and business solutions to Mastercard Scholar entrepreneurs, providing technical guidance and support for their ventures."
 
     },
-   
+
     {
         id: 5,
         category: "work",
-        date: "Sep 2022 - Aug 2023",
-        title: "Web Developerç",
+        date: "Sep 2022 - Sep 2023",
+        title: "Web Developer",
         place: "Natures Specialty Foods",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia saepe quis soluta eos ex pariatur optio accusamus voluptatibus animi."
+        desc: "Created an e-commerce website from scratch, enhanced user experience, managed content updates, and improved site performance, all while boosting consumer awareness. Gained diverse skills in software development and digital marketing."
 
     },
     {
@@ -50,7 +50,7 @@ export const educationData = [
         date: `Oct 2021 - Dec 2021`,
         title: "Software Developer Intern",
         place: "Qcell",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia saepe quis soluta eos ex pariatur optio accusamus voluptatibus animi."
+        desc: "Created single-page applications, dashboards, CRUD applications, and full-stack web applications. Acquired experience in Software Development and technical environments, including exposure to GitHub and Database Management."
     },
-  
+
 ];

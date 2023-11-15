@@ -1,27 +1,21 @@
 export const reviews=[
     {
         "id":1,
-        "image":require("../../assets/tm1.jpg"),
-        "name":"sheriff gaye",
-        "desc":"Lorem ipsum, dolor sit amet consectetur adipisicing elit Dolore accusamus nisi et ipsa in debitis repellendus vitae vel? Pariatur cumque fugiat at culpa unde illum nisi placeat qui officiis iste!"
+        "image":require("../../assets/IMG_6377.png"),
+        "name":"Mamodou  Bojang",
+        "desc":"Sheriff Gaye excels in web and app development, showcasing technical prowess, innovation, and organisational skills. Highly recommended professional."
     },
     {
         "id":2,
-        "image":require("../../assets/tm2.jpg"),
-        "name":"Mamdou Bojang",
-        "desc":"Lorem ipsum, dolor sit amet consectetur adipisicing elit Dolore accusamus nisi et ipsa in debitis repellendus vitae vel? Pariatur cumque fugiat at culpa unde illum nisi placeat qui officiis iste!"
+        "image":require("../../assets//eyan.png"),
+        "name":"Ahmed Eyan Jeng",
+        "desc":"Working with Sheriff has been a game-changer, he is an exceptional software engineer with a passion for clean architecture. Meticulous, innovative, and dedicated to crafting robust solutions. Highly recommend for complex projects"
     }
     ,
     {
         "id":3,
-        "image":require("../../assets/tm3.jpg"),
-        "name":"Jim Janneh",
-        "desc":"Lorem ipsum, dolor sit amet consectetur adipisicing elit Dolore accusamus nisi et ipsa in debitis repellendus vitae vel? Pariatur cumque fugiat at culpa unde illum nisi placeat qui officiis iste!"
+        "image":require("../../assets/author.jpeg"),
+        "name":"John Attu",
+        "desc":"Sheriff Gaye, our web developer at Nature's Specialty Foods, consistently delivers exceptional results, combining technical expertise with innovative solutions. A valuable asset to our team."
     },
-    {
-        "id":4,
-        "image":require("../../assets/tm4.jpg"),
-        "name":"Ousman Njie",
-        "desc":"Lorem ipsum, dolor sit amet consectetur adipisicing elit Dolore accusamus nisi et ipsa in debitis repellendus vitae vel? Pariatur cumque fugiat at culpa unde illum nisi placeat qui officiis iste!"
-    }
 ]

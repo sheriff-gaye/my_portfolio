@@ -1,12 +1,12 @@
 export const portfolio_data=[
     {
       "id":1,
-      "image": require("../../assets/school Medium.jpeg"),
-      "title": "SmartSchool",
-      "desc": "SmartSchool is an educational website developed in HTML, CSS, and JS to advertise available courses and programs.",
-      "stack":"HTML,CSS,JavaScript",
-      "demo_url": "https://sheriff-gaye.github.io/javascript_projects/school/index.html",
-      "git_url": "https://github.com/sheriff-gaye/javascript_projects/tree/main/school"
+      "image": require("../../assets/lms.png"),
+      "title": "EasyLearn",
+      "desc": "EasyLearn is an educational platform blends cutting-edge technology with a user-friendly interface, offering an immersive learning experience..",
+      "stack":"Next Js, Clerk , Tailwind , Prisma",
+      "demo_url": "https://lms-easylearn.vercel.app",
+      "git_url": "https://github.com/sheriff-gaye/learning_management_system.git"
 
     },
     {
