@@ -2,7 +2,7 @@ export const educationData = [
     {
         id: 1,
         category: "education",
-        date: `Jan 2001 - Present`,
+        date: `Jan 2021 - Present`,
         title: "Business Information Technology",
         place: "Kwame Nkrumah University of Science and Technology",
         desc: "Relevant Courses - Database Management for Business , Computer Operating System , Introduction to Programming , Mobile Application Design , Introduction to Business Analytics  , Management Information Systems , Internet Technology for Business , Networking & Security"
