@@ -10,6 +10,7 @@ import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import Education from "./components/education/education";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/reactt"
 
 
 const App=()=>{
@@ -25,6 +26,7 @@ const App=()=>{
         <Testimonial/>
         <Contact/>
         <Footer/>
+        <SpeedInsights/>
         <Analytics />
         
         </>
