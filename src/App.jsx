@@ -9,6 +9,7 @@ import Testimonial from "./components/testimonials/testimonial";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import Education from "./components/education/education";
+import { Analytics } from '@vercel/analytics/react';
 
 
 const App=()=>{
@@ -24,6 +25,7 @@ const App=()=>{
         <Testimonial/>
         <Contact/>
         <Footer/>
+        <Analytics />
         
         </>
       
