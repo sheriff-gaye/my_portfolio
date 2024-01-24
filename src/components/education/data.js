@@ -13,7 +13,7 @@ export const educationData = [
         date: "Feb 2021 -  Mar 2022",
         title: "Full Stack Software Engineering ",
         place: "Alx Africa (Remote)",
-        desc: "Full Stack Software Engineering - C# , HTML , CSS , JavaScript , Typescript , React , Node ,  Python"
+        desc: "Full Stack Software Engineering -   HTML , CSS , JavaScript , Typescript , React , Node ,  Python , C#"
 
     },
     {
@@ -25,14 +25,32 @@ export const educationData = [
         desc: "Certificate and Diploma in Information Technology - Microsoft Word , Microsoft Excel , Microsoft Powerpoint , Microsoft Access"
 
     },
+
     {
-        id: 6,
+        id: 4,
+        category: "education",
+        date: "Oct 2016 - Jun 2019",
+        title: "Commerce",
+        place: "Nusrat Senior Secondary School",
+        desc: "West African  Examination Council (WASSCE) - Mathematics , Core Science , Agricultural Science , English Language , Financial Accounting , Cost Accounting , Economics ,  Geography, Commerce , Information Technology ."
+
+    },
+    {
+        id: 5,
         category: "work",
         date: "Mar 2023 - Present",
         title: "Co Founder & Program Manager",
         place: "Fuller Developers",
         desc: "Offering mentorship and business solutions to Mastercard Scholar entrepreneurs, providing technical guidance and support for their ventures."
 
+    },
+    {
+        id: 6,
+        category: "work",
+        date: `Oct 2023 - Dec 2023`,
+        title: "Software Engineer Intern",
+        place: "Insist Global ",
+        desc: "Developed API's using Node , express , Postgres and MongoDB while adhering to the clean architecture and design patterns. Building robust frontend applications using React , Next Js and Tailwind utilising for application containerisations . Gained experience in software development , workflows , architectural principles and Devops."
     },
 
     {
@@ -45,12 +63,13 @@ export const educationData = [
 
     },
     {
-        id: 4,
+        id: 7,
         category: "work",
         date: `Oct 2021 - Dec 2021`,
-        title: "Software Developer Intern",
+        title: "Software Engineer Intern",
         place: "Qcell",
         desc: "Created single-page applications, dashboards, CRUD applications, and full-stack web applications. Acquired experience in Software Development and technical environments, including exposure to GitHub and Database Management."
     },
+    
 
 ];

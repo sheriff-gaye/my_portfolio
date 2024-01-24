@@ -6,7 +6,7 @@ export const portfolio_data=[
       "desc": "EasyLearn is an educational platform blends cutting-edge technology with a user-friendly interface, offering an immersive learning experience..",
       "stack":"Next Js, Clerk , Tailwind , Prisma",
       "demo_url": "https://lms-easylearn.vercel.app",
-      "git_url": "https://github.com/sheriff-gaye/learning_management_system.git"
+    //   "git_url": "https://github.com/sheriff-gaye/learning_management_system.git"
 
     },
     {
@@ -24,7 +24,7 @@ export const portfolio_data=[
         "stack":"React , Swiper Js",
         "desc": "Get Fit is a minimalist fitness center website with a gorgeous user interface, developed with standard React JS. The site highlights available fitness classes and personal trainers.",
         "demo_url": "https://sheriff-gaye.github.io/getfit",
-        "git_url": "https://github.com/sheriff-gaye/getfit"
+        // "git_url": "https://github.com/sheriff-gaye/getfit"
     },
    
    
@@ -44,7 +44,7 @@ export const portfolio_data=[
         "title": "MyClientHub",
         "stack":"Laravel , Livewire , SQL , Tailwind",
         "desc": "MyClientHub is a comprehensive CRM solution that helps businesses efficiently manage clients, projects, and tasks, streamlining communication and boosting productivity.",
-        "demo_url": "",
+        // "demo_url": "",
         "git_url": "https://github.com/sheriff-gaye/laravel_crm"
     },
     {
@@ -54,7 +54,16 @@ export const portfolio_data=[
         "stack":"Next JS ",
         "desc": "MyClientHub is a comprehensive CRM solution that helps businesses efficiently manage clients, projects, and tasks, streamlining communication and boosting productivity.",
         "demo_url": "https://carapp-silk.vercel.app/",
-        "git_url": "https://github.com/sheriff-gaye/car_app"
+    },
+
+    {
+        "id":12,
+        "image": require("../../assets/airbnb.jpeg"),
+        "title": "Home Harmony",
+        "stack":"Next JS , MongoDB , Prisma ",
+        "desc": "Home Harmony your Airbnb alternative (clone) for listing homes, apartments, islands, and villas. Book with ease for a convenient and personalized experience in comfortable accommodations.",
+        "demo_url": "https://homeharmoney.vercel.app/",
+       
     }
   
   ]
