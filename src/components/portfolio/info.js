@@ -64,7 +64,17 @@ export const portfolio_data=[
         "desc": "Home Harmony your Airbnb alternative (clone) for listing homes, apartments, islands, and villas. Book with ease for a convenient and personalized experience in comfortable accommodations.",
         "demo_url": "https://homeharmoney.vercel.app/",
        
-    }
+    },
+    {
+        "id":13,
+        "image": require("../../assets/shop.jpeg"),
+        "title": "Shop Sphere",
+        "stack":"Next JS , Prisma , Shadcn",
+        "desc": " Multistore ecommerce platform with an intuitive admin panel for easy store customization. Seamless card payment options enhance customer convenience. Ideal for showcasing diverse storefronts.",
+        "demo_url": "https://shopsphere-six.vercel.app",
+       
+    },
+    
   
   ]
 

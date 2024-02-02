@@ -13,7 +13,7 @@ export const educationData = [
         date: "Feb 2021 -  Mar 2022",
         title: "Full Stack Software Engineering ",
         place: "Alx Africa (Remote)",
-        desc: "Full Stack Software Engineering -   HTML , CSS , JavaScript , Typescript , React , Node ,  Python , C#"
+        desc: "Full Stack Software Engineering -   HTML , CSS , JavaScript , Typescript , React , Node ,  Python , C# , Devops , Git , Vim , Linux , Scripting , Shell ."
 
     },
     {
