@@ -69,11 +69,20 @@ export const portfolio_data=[
         "id":13,
         "image": require("../../assets/shop.jpeg"),
         "title": "Shop Sphere",
-        "stack":"Next JS , Prisma , Shadcn",
+        "stack":"Next JS , Prisma , Shadcn, Tailwind",
         "desc": " Multistore ecommerce platform with an intuitive admin panel for easy store customization. Seamless card payment options enhance customer convenience. Ideal for showcasing diverse storefronts.",
         "demo_url": "https://shopsphere-six.vercel.app",
        
     },
+    {
+        "id":14,
+        "image": require("../../assets/taskify.png"),
+        "title": "Taskify",
+        "stack":"Next JS , Prisma , Shadcn , Tailwind, Postgres",
+        "desc": "Taskify, designed for effortless task and project management, streamlines end-user workflows, offering a user-friendly solution to enhance productivity and simplify work processes.Its can be use my both individual and team",
+        "demo_url": "https://trello-clone-five-zeta.vercel.app/",
+       
+    }
     
   
   ]

@@ -13,7 +13,7 @@ export const educationData = [
         date: "Feb 2021 -  Mar 2022",
         title: "Full Stack Software Engineering ",
         place: "Alx Africa (Remote)",
-        desc: "Full Stack Software Engineering -   HTML , CSS , JavaScript , Typescript , React , Node ,  Python , C# , Devops , Git , Vim , Linux , Scripting , Shell ."
+        desc: "Full Stack Software Engineering -   HTML , CSS , JavaScript , Typescript , React , Node ,  Python , C# , Devops , Git  ."
 
     },
     {
@@ -29,14 +29,23 @@ export const educationData = [
     {
         id: 4,
         category: "education",
-        date: "Oct 2016 - Jun 2019",
-        title: "Commerce",
-        place: "Nusrat Senior Secondary School",
-        desc: "West African  Examination Council (WASSCE) - Mathematics , Core Science , Agricultural Science , English Language , Financial Accounting , Cost Accounting , Economics ,  Geography, Commerce , Information Technology ."
+        date: "Oct 2022 - Feb 2023",
+        title: "Web Developement",
+        place: "FreeCodeCamp",
+        desc:" Responsive Web Design , JavaScript Algorithms and Data Structures , Front End Libraries , Data Visualization , APIs "
 
     },
     {
         id: 5,
+        category: "education",
+        date: "Oct 2016 - Jun 2019",
+        title: "Commerce",
+        place: "Nusrat Senior Secondary School",
+        desc: "West African  Examination Council (WASSCE) - Mathematics , Core Science , Agricultural Science , English Language , Financial Accounting , Cost Accounting , Economics ,  Geography, Commerce ."
+
+    },
+    {
+        id: 6,
         category: "work",
         date: "Mar 2023 - Present",
         title: "Co Founder & Program Manager",
@@ -45,7 +54,7 @@ export const educationData = [
 
     },
     {
-        id: 6,
+        id: 7,
         category: "work",
         date: `Oct 2023 - Dec 2023`,
         title: "Software Engineer Intern",
@@ -54,7 +63,7 @@ export const educationData = [
     },
 
     {
-        id: 5,
+        id: 8,
         category: "work",
         date: "Sep 2022 - Sep 2023",
         title: "Web Developer",
@@ -63,7 +72,7 @@ export const educationData = [
 
     },
     {
-        id: 7,
+        id: 9,
         category: "work",
         date: `Oct 2021 - Dec 2021`,
         title: "Software Engineer Intern",
