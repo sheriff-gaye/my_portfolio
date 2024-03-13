@@ -45,6 +45,15 @@ export const educationData = [
 
     },
     {
+        id: 10,
+        category: "work",
+        date: "Feb 2024 - Present",
+        title: "Founder & Content Creator",
+        place: "Clean Code Hub",
+        desc: "Creating engaging coding content , promoting clean code principles on social media platforms."
+
+    },
+    {
         id: 6,
         category: "work",
         date: "Mar 2023 - Present",
@@ -59,16 +68,16 @@ export const educationData = [
         date: `Oct 2023 - Dec 2023`,
         title: "Software Engineer Intern",
         place: "Insist Global ",
-        desc: "Developed API's using Node , express , Postgres and MongoDB while adhering to the clean architecture and design patterns. Building robust frontend applications using React , Next Js and Tailwind utilising for application containerisations . Gained experience in software development , workflows , architectural principles and Devops."
+        desc: "Developed API's using Node , express , Postgres and MongoDB while adhering to the clean architecture and design patterns. Building robust frontend applications using React , Next Js and Tailwind utilising for application containerisations.",
     },
 
     {
         id: 8,
         category: "work",
-        date: "Sep 2022 - Sep 2023",
+        date: "Sep 2022 - Mar 2024",
         title: "Web Developer",
         place: "Natures Specialty Foods",
-        desc: "Created an e-commerce website from scratch, enhanced user experience, managed content updates, and improved site performance, all while boosting consumer awareness. Gained diverse skills in software development and digital marketing."
+        desc: "Created an e-commerce website from scratch, enhanced user experience, managed content updates, and improved site performance, all while boosting consumer awareness."
 
     },
     {
