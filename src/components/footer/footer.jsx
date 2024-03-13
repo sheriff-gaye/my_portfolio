@@ -7,6 +7,10 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 
 const Footer=()=>{
+    const new_year=new Date();
+
+    const new_num=new_year.getFullYear();
+
     return (<footer id="footer">
         <a href="#footer" className="footer_logo">SHERIFF GAYE</a>
         
@@ -32,7 +36,7 @@ const Footer=()=>{
         </div>
 
         <div className="footer_copyright">
-            <small>&copy; Sheriff Gaye 2023</small>
+            <small>&copy;Gaye Tech {new_num}</small>
             
         </div>
         
