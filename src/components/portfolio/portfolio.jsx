@@ -2,6 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import { portfolio_data } from "./info";
 
+
 const Portfolio = () => {
   return (
     <section id="portfolio">
@@ -47,9 +48,11 @@ const Portfolio = () => {
             );
           }
         )}
-      
+      <div>
+      <button className="btn btn-primary lg">See More of My Projects</button>
       </div>
-      <button>more</button>
+      </div>
+     
     </section>
   );
 };
