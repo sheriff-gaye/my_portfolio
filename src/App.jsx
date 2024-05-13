@@ -1,8 +1,8 @@
 import React from "react";
-
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./components/footer/footer";
 
 import Projects from "./components/projects/projects";
 import Home from "./Home";
@@ -19,6 +19,7 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
   
     </>
   );

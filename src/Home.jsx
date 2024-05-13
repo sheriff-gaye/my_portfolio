@@ -1,5 +1,4 @@
-
-import React from 'react'
+import React from "react";
 import Header from "./components/header/header";
 import Nav from "./components/nav/nav";
 import About from "./components/about/about";
@@ -8,14 +7,12 @@ import Services from "./components/services/services";
 import Portfolio from "./components/portfolio/portfolio";
 import Testimonial from "./components/testimonials/testimonial";
 import Contact from "./components/contact/contact";
-import Footer from "./components/footer/footer";
 import Education from "./components/education/education";
 
 const Home = () => {
   return (
     <div>
-
-<Header />
+      <Header />
       <Nav />
       <About />
       <Experience />
@@ -24,9 +21,9 @@ const Home = () => {
       <Portfolio />
       <Testimonial />
       <Contact />
-      <Footer />
+    
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

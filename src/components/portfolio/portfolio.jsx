@@ -2,7 +2,6 @@ import React from "react";
 import "./portfolio.css";
 import { portfolio_data } from "./info";
 
-
 const Portfolio = () => {
   return (
     <section id="portfolio">
@@ -49,7 +48,8 @@ const Portfolio = () => {
           }
         )}
       <div>
-      <button className="btn btn-primary lg">See More of My Projects</button>
+
+     <a href="/projects"  className="btn btn-primary lg">See More of My Projects</a>
       </div>
       </div>
      
