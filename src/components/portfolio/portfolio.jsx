@@ -4,16 +4,19 @@ import "./portfolio.css";
 import { portfolio_data } from "./info";
 
 const Portfolio = () => {
+  const router = useLocation();
 
-  const router=useLocation();
+  const isNotProject = router.pathname !== "/projects";
 
-  const isNotProject=router.pathname !=='/projects';
+  const displayData = isNotProject
+    ? portfolio_data.slice(0, 6)
+    : portfolio_data;
   return (
     <section id="portfolio">
       <h5>My Recent Works</h5>
       <h2>My Portfolio</h2>
       <div className="container portfolio_container">
-        {portfolio_data.map(
+        {displayData.map(
           ({ id, image, title, desc, demo_url, git_url, stack }) => {
             return (
               <article className="portfolio_item" key={id}>
@@ -53,15 +56,14 @@ const Portfolio = () => {
           }
         )}
 
-        { isNotProject &&
-      <div>
-
-     <a href="/projects"  className="btn btn-primary lg">See More of My Projects</a>
+        {isNotProject && (
+          <div>
+            <a href="/projects" className="btn btn-primary lg">
+              See More of My Projects
+            </a>
+          </div>
+        )}
       </div>
-
-        }
-      </div>
-     
     </section>
   );
 };
