@@ -1,0 +1,10 @@
+
+.header{
+    display: inline-flex;
+    gap: 2rem;
+}
+
+.header a {
+    font-size: 1.8rem;
+}
+

@@ -36,7 +36,7 @@ const Footer=()=>{
         </div>
 
         <div className="footer_copyright">
-            <small>&copy;Gaye Tech {new_num}</small>
+            <small>&copy;Gaye Tech {new_num} all rights reserved</small>
             
         </div>
         

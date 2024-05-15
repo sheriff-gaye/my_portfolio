@@ -1,8 +1,13 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import "./portfolio.css";
 import { portfolio_data } from "./info";
 
 const Portfolio = () => {
+
+  const router=useLocation();
+
+  const isNotProject=router.pathname !=='/projects';
   return (
     <section id="portfolio">
       <h5>My Recent Works</h5>
@@ -47,10 +52,14 @@ const Portfolio = () => {
             );
           }
         )}
+
+        { isNotProject &&
       <div>
 
      <a href="/projects"  className="btn btn-primary lg">See More of My Projects</a>
       </div>
+
+        }
       </div>
      
     </section>

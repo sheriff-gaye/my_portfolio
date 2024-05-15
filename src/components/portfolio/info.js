@@ -82,7 +82,18 @@ export const portfolio_data=[
         "desc": "Taskify, designed for effortless task and project management, streamlines end-user workflows, offering a user-friendly solution to enhance productivity and simplify work processes.Its can be use my both individual and team",
         "demo_url": "https://trello-clone-five-zeta.vercel.app/",
        
-    }
+    },
+    {
+        "id":14,
+        "image": require("../../assets/great_minds.jpeg"),
+        "title": "Great Minds Health Care",
+        "stack":"HTML , CSS , JS , Swiper JS",
+        "desc": " Great Mind Hospital Care is a user-friendly website designed for students, staff, and stakeholders. It features a sleek UI design, allowing students to easily contact the hospital and schedule appointments.",
+        "demo_url": "https://sheriff-gaye.github.io/hospital_website/",
+       
+    },
+
+    
     
   
   ]
