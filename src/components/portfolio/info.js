@@ -92,6 +92,25 @@ export const portfolio_data=[
         "demo_url": "https://sheriff-gaye.github.io/hospital_website/",
        
     },
+    {
+        "id":14,
+        "image": require("../../assets/nike.jpeg"),
+        "title": "KicksHub",
+        "stack":"React JS",
+        "desc": "Kicks Hub A sleek React.js Nike website clone for online shoe sales, featuring a modern UI and extensive functionality for seamless shopping and user experience.",
+        "demo_url": "https://kickshub.vercel.app/",
+       
+    },
+
+    {
+        "id":14,
+        "image": require("../../assets/notes2.jpeg"),
+        "title": "Easy Notes",
+        "stack":"React JS",
+        "desc": "A highly organized, user-friendly note-taking web app built with React. Users can create, edit, and delete notes, all while utilizing the browser's local storage as its database for seamless data management",
+        "demo_url": "https://sheriff-gaye.github.io/note_app/",
+       
+    }
 
     
     
