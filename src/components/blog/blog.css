@@ -1,0 +1,22 @@
+.blog_container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.back{
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.back a{
+    font-size: 1.4rem;
+}
+
+
+.badge{
+    background-color:  #4db5ff;
+    border-radius: 3rem;
+    padding: 0 1.3rem;
+    width: fit-content;
+}
