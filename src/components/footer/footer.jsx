@@ -4,7 +4,6 @@ import { FiInstagram } from "react-icons/fi";
 import { BsTwitterX, BsYoutube } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
-import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
   const new_year = new Date();
