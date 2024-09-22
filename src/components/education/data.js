@@ -2,10 +2,10 @@ export const educationData = [
     {
         id: 1,
         category: "education",
-        date: `Jan 2021 - Present`,
+        date: `Jan 2021 - Aug 2024`,
         title: "Business Information Technology",
         place: "Kwame Nkrumah University of Science and Technology",
-        desc: "Relevant Courses - Database Management for Business , Computer Operating System , Introduction to Programming , Mobile Application Design , Introduction to Business Analytics  , Management Information Systems , Internet Technology for Business , Networking & Security"
+        desc: "Relevant Courses - Database Management for Business , Computer Operating System , Introduction to Programming , Mobile Application Design , Introduction to Business Analytics  , Management Information Systems , Internet Technology for Business , Networking & Security , Web Application Design , Decsion Support Systems , System Analysis Design"
     },
     {
         id: 2,
@@ -29,10 +29,10 @@ export const educationData = [
     {
         id: 4,
         category: "education",
-        date: "Oct 2022 - Feb 2023",
+        date: "Oct 2022 - Aug 2024",
         title: "Web Developement",
         place: "FreeCodeCamp",
-        desc:" Responsive Web Design , JavaScript Algorithms and Data Structures , Front End Libraries , Data Visualization , APIs "
+        desc:" Responsive Web Design , JavaScript Algorithms and Data Structures , Front End Libraries , Data Visualization , APIs , Python"
 
     },
     {
@@ -57,7 +57,7 @@ export const educationData = [
         id: 6,
         category: "work",
         date: "Mar 2023 - Present",
-        title: "Co Founder & Program Manager",
+        title: "Co Founder & Software Engineer",
         place: "Fuller Developers",
         desc: "Offering mentorship and business solutions to Mastercard Scholar entrepreneurs, providing technical guidance and support for their ventures."
 
@@ -74,8 +74,8 @@ export const educationData = [
     {
         id: 8,
         category: "work",
-        date: "Sep 2022 - Mar 2024",
-        title: "Web Developer",
+        date: "Sep 2022 - Aug 2024",
+        title: "Software Engineer",
         place: "Natures Specialty Foods",
         desc: "Created an e-commerce website from scratch, enhanced user experience, managed content updates, and improved site performance, all while boosting consumer awareness."
 
@@ -86,7 +86,7 @@ export const educationData = [
         date: `Oct 2021 - Dec 2021`,
         title: "Software Engineer Intern",
         place: "Qcell",
-        desc: "Created single-page applications, dashboards, CRUD applications, and full-stack web applications. Acquired experience in Software Development and technical environments, including exposure to GitHub and Database Management."
+        desc: "Created single page applications, dashboards, CRUD applications, and full-stack web applications. Acquired experience in Software Development and technical environments, including exposure to GitHub and Database Management."
     },
     
 

@@ -3,13 +3,14 @@ import "./about.css";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
-import Me from "../../assets/css dinner_397.png";
+import Me from "../../assets/IMG_4513.jpg";
+import { Send } from "lucide-react";
 
 const About = () => {
   return (
     <section id="about">
       <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h2>About <span className="brand">&#123;Me&#125;</span></h2>
 
       <div className="container about_container">
         <div className="about_me">
@@ -22,7 +23,7 @@ const About = () => {
             <article className="about_card">
               <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <small>3+ Years </small>
+              <small>4+ Years </small>
             </article>
 
             <article className="about_card">
@@ -47,6 +48,7 @@ const About = () => {
 
           <a href="#contact" class="btn btn-primary">
             Let's Talk
+            <Send/>
           </a>
         </div>
       </div>

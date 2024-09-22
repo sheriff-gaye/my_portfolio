@@ -21,7 +21,7 @@ const Projects = () => {
           honing my skills, often demanding days and hours of dedication to
           bring them to fruition.
         </p>
-<br />
+        <br />
         <p>
           They stand as testaments to my perseverance and growth, showcasing the
           progress I've made along the way. Despite the obstacles faced, I'm

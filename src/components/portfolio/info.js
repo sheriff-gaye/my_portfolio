@@ -113,7 +113,7 @@ export const portfolio_data = [
     ,
     {
         "id": 15,
-        "image": require("../../asset/githubn.jpg"),
+        "image": require("../../assets/github.jpeg"),
         "title": "Github API",
         "stack": "HTML , CSS , JavaScript",
         "desc": "A highly organized, user-friendly note-taking web app built with React. Users can create, edit, and delete notes, all while utilizing the browser's local storage as its database for seamless data management",

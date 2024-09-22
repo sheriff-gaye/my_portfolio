@@ -8,10 +8,13 @@ import Portfolio from "./components/portfolio/portfolio";
 import Testimonial from "./components/testimonials/testimonial";
 import Contact from "./components/contact/contact";
 import Education from "./components/education/education";
+import HomeBlog from "./components/blog/HomeBlog";
+import Banner from "./banner/banner";
 
 const Home = () => {
   return (
     <div>
+      <Banner/>
       <Header />
       <Nav />
       <About />
@@ -19,9 +22,9 @@ const Home = () => {
       <Services />
       <Education />
       <Portfolio />
+      <HomeBlog />
       <Testimonial />
       <Contact />
-    
     </div>
   );
 };

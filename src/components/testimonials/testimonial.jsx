@@ -10,7 +10,7 @@ const Testimonial = () => {
   return (
     <section id="testimonial">
       <h5>Review from Clients</h5>
-      <h2>Testimonials</h2>
+      <h2>My <span>&#123;Testimonials&#125;</span></h2>
 
       <Swiper
         className="container testimonial_container"
@@ -28,7 +28,7 @@ const Testimonial = () => {
       >
         {reviews.map(({ id, name, image, desc }) => {
           return (
-            <SwiperSlide className="testimonial" index={id}>
+            <SwiperSlide className="testimonial" index={id} key={id}>
               <div className="client_avatar">
                 <img src={image} alt={name} />
               </div>

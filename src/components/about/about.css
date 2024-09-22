@@ -11,6 +11,8 @@
     display: grid;
     place-items: center;
 }
+
+
 .about_me-image{
     border-radius: 2rem;
     overflow: hidden;
@@ -79,6 +81,7 @@
 
 
 @media screen and (max-width:600px) {
+  
 
     .about_me{
         width: 65%;

@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import "./portfolio.css";
 import { portfolio_data } from "./info";
+import { ArrowRight, ExternalLink, Github,  } from "lucide-react";
 
 const Portfolio = () => {
   const router = useLocation();
@@ -13,8 +14,10 @@ const Portfolio = () => {
     : portfolio_data;
   return (
     <section id="portfolio">
+         
+
       <h5>My Recent Works</h5>
-      <h2>My Portfolio</h2>
+      <h2>My <span>&#123;Portfolio&#125;</span></h2>
       <div className="container portfolio_container">
         {displayData.map(
           ({ id, image, title, desc, demo_url, git_url, stack }) => {
@@ -37,6 +40,7 @@ const Portfolio = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
+                      <Github/>
                       Github
                     </a>
                   )}
@@ -47,6 +51,7 @@ const Portfolio = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
+                      <ExternalLink />
                       Live Demo
                     </a>
                   )}
@@ -60,6 +65,7 @@ const Portfolio = () => {
           <div>
             <a href="/projects" className="btn btn-primary lg">
               See More of My Projects
+              <ArrowRight/>
             </a>
           </div>
         )}
