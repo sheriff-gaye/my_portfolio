@@ -1,6 +1,6 @@
 import { BiArrowBack } from "react-icons/bi";
 import { useParams, Link } from "react-router-dom";
-import { Eye, TimerResetIcon } from "lucide-react";
+import { TimerResetIcon } from "lucide-react";
 import blogData from "./data"; // Import your blog data
 import "./blog.css"; // Ensure your styles are being imported
 import Comment from "./comment";

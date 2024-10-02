@@ -4,6 +4,7 @@ import { FiInstagram } from "react-icons/fi";
 import { BsTwitterX, BsYoutube } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
+import { SiBuymeacoffee } from "react-icons/si";
 
 const Footer = () => {
   const new_year = new Date();
@@ -62,6 +63,9 @@ const Footer = () => {
         </a>
         <a href="https://www.youtube.com/@cleancode_hub">
           <BsYoutube />
+        </a>
+        <a href="https://buymeacoffee.com/sgaye">
+        <SiBuymeacoffee/>
         </a>
 
        

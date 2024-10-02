@@ -1,4 +1,4 @@
-import { Timer } from "lucide-react";
+import { TimerReset } from "lucide-react";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -29,7 +29,7 @@ export const BlogCard = ({ blogs }) => {
               Read More
             </Link>
             <p className="timer">
-              <Timer /> {blog.dateCreated}
+              <TimerReset /> {blog.dateCreated}
             </p>
           </div>
         </article>
