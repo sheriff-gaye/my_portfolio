@@ -1,23 +1,49 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React, { useState } from "react";
 import "./portfolio.css";
 import { portfolio_data } from "./info";
-import { ArrowRight, ExternalLink, Github,  } from "lucide-react";
+import { ArrowRight, ExternalLink, Filter, Github,  } from "lucide-react";
 
 const Portfolio = () => {
-  const router = useLocation();
+  const [activeFilter, setActiveFilter] = useState('all');
+  const [isNotProject] = useState(true);
 
-  const isNotProject = router.pathname !== "/projects";
+  const categories = [
+    { key: 'all', label: 'All' },
+    { key: 'fullstack', label: 'Full Stack' },
+    { key: 'frontend', label: 'Frontend' },
+    { key: 'ecommerce', label: 'E-commerce' },
+    { key: 'education', label: 'Education' }
+  ];
 
-  const displayData = isNotProject
-    ? portfolio_data.slice(0, 6)
-    : portfolio_data.slice(7,);
+  // Filter data
+  const filteredData = portfolio_data.filter(item => 
+    activeFilter === 'all' || item.category === activeFilter
+  );
+
+  const displayData = isNotProject 
+    ? filteredData.slice(0, 6) 
+    : filteredData;
   return (
     <section id="portfolio">
          
 
       <h5>My Recent Works</h5>
       <h2>Featured <span>&#123;Projects&#125;</span></h2>
+
+      <div className="filters">
+        {categories.map((category) => (
+          <button
+            key={category.key}
+            onClick={() => setActiveFilter(category.key)}
+            className={`filter-btn ${activeFilter === category.key ? 'active' : ''}`}
+          >
+            <Filter size={16} />
+            {category.label}
+          </button>
+        ))}
+      </div>
+
+
       <div className="container portfolio_container">
         {displayData.map(
           ({ id, image, title, desc, demo_url, git_url, stack }) => {
@@ -30,7 +56,14 @@ const Portfolio = () => {
 
                 <p>{desc}</p>
 
-                <p className="stack">{stack}</p>
+                <div className="stack-container">
+                  {stack.split(',').map((tech, index) => (
+                    <span key={index} className="stack-tag">
+                      {tech.trim()}
+                    </span>
+                  ))}
+                </div>
+
 
                 <div className="portfolio_item-cta">
                   {git_url && (
