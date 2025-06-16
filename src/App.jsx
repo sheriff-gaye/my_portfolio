@@ -8,6 +8,7 @@ import Home from "./Home";
 import Blog from "./components/blog/blog";
 import BlogDetails from "./components/blog/blog-details";
 import LeetCode from "./components/leetcode/leetcode";
+import LeetCodeDetails from "./components/leetcode/leetcode-details";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
           <Route path="/leetcode" element={<LeetCode />} />
+          <Route path="/blog/:title" element={<LeetCodeDetails />} />
         </Routes>
         <Footer />
       </BrowserRouter>

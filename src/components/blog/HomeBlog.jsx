@@ -1,27 +1,30 @@
 import React from "react";
 import { BlogCard } from "./card";
 import { ArrowRight } from "lucide-react";
-import blogData from "./data"; // Import your blog data
+import blogData from "./data";
 
 const HomeBlog = () => {
-  // Get the last three blogs
-  const recentBlogs = blogData.slice(-3).reverse(); // Get the last three and reverse to show most recent first
+  const recentBlogs = blogData.slice(-3).reverse();
 
   return (
-    <section id="blog">
-      <h5>My Blog</h5>
-      <h2>
-        My <span>&#123;Blog&#125;</span>
-      </h2>
+    <section id="blog" className="home-blog-section">
+      <div className="container">
+        <div className="section-header">
+          <h5 className="section-subtitle">My Blog</h5>
+          <h2 className="section-title">
+            My <span className="highlight">&#123;Blog&#125;</span>
+          </h2>
+        </div>
 
-      <div className="blog_container container">
-        <BlogCard blogs={recentBlogs} /> {/* Pass recent blogs to BlogCard */}
-
-        <div>
-          <a href="/blog" className="btn btn-primary lg">
-            See More of Blogs
-            <ArrowRight />
-          </a>
+        <div className="blog_container">
+          <BlogCard blogs={recentBlogs} />
+          
+          <div className="blog-cta">
+            <a href="/blog" className="btn btn-primary lg">
+              See More Articles
+              <ArrowRight size={20} />
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -29,3 +32,4 @@ const HomeBlog = () => {
 };
 
 export default HomeBlog;
+

@@ -1,5 +1,4 @@
 const blogData = [
-
   {
     id: 1,
     title: "AWS Loves Next.js",

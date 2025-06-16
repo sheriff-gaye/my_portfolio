@@ -51,6 +51,16 @@ export const educationData = [
         image: require("../../assets/nusrat.webp")
 
     },
+    {
+        id: 15,
+        category: "work",
+        date: "Feb 2025 - Present",
+        title: "Software Engineer",
+        place: "Nafa Financial Services",
+        desc: "Building fintech mobile applications using Flutter, clean architecture, and GraphQL to support digital financial services. Developing scalable and efficient solutions to enhance customer experience. Creating secure and dynamic platforms that streamline financial operations for businesses.",
+        image: require("../../assets/nafa.png")
+
+    },
 
     {
         id: 10,
@@ -73,16 +83,16 @@ export const educationData = [
 
     },
 
-    {
-        id: 10,
-        category: "work",
-        date: "Aug 2024 - Oct 2024 ",
-        title: "Software Engineering Fellow",
-        place: "Headstarter ",
-        desc: "Developed 5 AI solutions project with team using Pinecone, Next Js ,Typescript , Firebase , and JavaScript . Collaborated on a team to created an AI pantry system for smart kitchen using Gemini , Open AI , and Claude. Optimized Projects using professional feedback from software engineers from Google, Meta , and Amazon",
-        image: require("../../assets/download.jpeg")
+    // {
+    //     id: 10,
+    //     category: "work",
+    //     date: "Aug 2024 - Oct 2024 ",
+    //     title: "Software Engineering Fellow",
+    //     place: "Headstarter ",
+    //     desc: "Developed 5 AI solutions project with team using Pinecone, Next Js ,Typescript , Firebase , and JavaScript . Collaborated on a team to created an AI pantry system for smart kitchen using Gemini , Open AI , and Claude. Optimized Projects using professional feedback from software engineers from Google, Meta , and Amazon",
+    //     image: require("../../assets/download.jpeg")
 
-    },
+    // },
     {
         id: 7,
         category: "work",

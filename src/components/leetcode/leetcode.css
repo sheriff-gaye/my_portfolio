@@ -1,0 +1,237 @@
+:root {
+  --badge-easy: #00b8a3;
+  --badge-medium: #ffc01e;
+  --badge-hard: #ff375f;
+  --hover-color: #3a3a3a;
+}
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.problems-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var();
+  gap: 2.5rem;
+}
+
+.problem-card {
+  background: var(--color-bg-variant);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background: var(--color-primary);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.leetcode-logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+.platform-name {
+  color: var(--text-secondary);
+}
+
+.badge {
+  padding: 0.25rem 1rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+}
+
+.badge.easy {
+  background-color: var(--badge-easy);
+}
+
+.badge.medium {
+  background-color: var(--badge-medium);
+}
+
+.badge.hard {
+  background-color: var(--badge-hard);
+}
+
+.problem-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.author-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #4a4a4a;
+}
+
+.author-name {
+  color: var(--text-secondary);
+}
+
+.problem-date {
+  color: var(--text-secondary);
+}
+
+.problem-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-button {
+  background-color: var(--card-background);
+  border: none;
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: var(--hover-color);
+}
+
+.detail-card {
+  background-color: var(--card-background);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.detail-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.approach-list {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.approach-list li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.approach-list li::before {
+  content: "•";
+  position: absolute;
+  left: -1rem;
+}
+
+.code-container {
+  background-color: var(--background-dark);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.code-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+}
+
+.tab-button.active {
+  background-color: var(--card-background);
+  color: var(--text-primary);
+}
+
+.code-block {
+  font-family: "Fira Code", monospace;
+  white-space: pre;
+  overflow-x: auto;
+  padding: 1rem;
+  background-color: var(--background-dark);
+  border-radius: 0.375rem;
+}
+
+@media (max-width: 1024px) {
+  .problems-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .problems-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-title {
+    font-size: 1.75rem;
+  }
+
+  .problem-card {
+    padding: 1rem;
+  }
+
+  .detail-card {
+    padding: 1rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606060;
+}
