@@ -106,7 +106,7 @@ Thank you, Ghana Data Science Summit (IndabaX Ghana) for hosting such an inspiri
   },
   {
     id: 9,
-    featured: true,
+    featured: false,
     title: "Pycon Africa 2024",
     dateCreated: "25/09/2024",
     tags: ["Python", "Conference", "Community", "Tech Events"],
@@ -184,6 +184,24 @@ Soft Skills Tips for Devs
 Keep Innovation 🙌
       `,
     image: require("../../assets/blog/IMG_0733.jpg")
+  },
+
+  {
+    id: 13,
+    featured: true,
+    title: "NASA Space Apps Challenge",
+    dateCreated: "04/05/2025",
+    tags: ["Hackathon", "Innovation", "Space Tech", "Collaboration"],
+    content: `
+ Hacktoberfest couldn’t have started any better
+
+We came for the code but stayed for the community. I had the absolute pleasure of mentoring alongside Joseph Muthui at the NASA Space Apps Challenge hashtag#Banjul a truly historic moment for our growing tech ecosystem in The Gambia. 
+
+The energy, teamwork, and creativity from all the participants were beyond inspiring. Watching brilliant minds come together to tackle real world hashtag#challenges reminded me exactly why I love being part of this community. 
+
+Big shoutout to our local lead Malik Kolawole Lanlokun and the volunteers Modou Lamin Jagne , Ibrahim Sissoho , Victoria Chizoba Okwuanalu and the entire team for bringing such a fantastic initiative to our community. 
+      `,
+    image: require("../../assets/blog/IMG_4861 2.jpeg")
   }
 ];
 
