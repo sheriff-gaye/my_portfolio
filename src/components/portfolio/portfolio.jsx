@@ -69,7 +69,7 @@ const Portfolio = () => {
                   {git_url && (
                     <a
                       href={git_url}
-                      className="btn"
+                      className="btn  enhanced"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -79,8 +79,8 @@ const Portfolio = () => {
                   )}
                   {demo_url && (
                     <a
-                      href={demo_url}
-                      className="btn btn-primary"
+                      href={demo_url} 
+                      className="btn btn-primary  enhanced"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -96,7 +96,7 @@ const Portfolio = () => {
 
         {isNotProject && (
           <div>
-            <a href="/projects" className="btn btn-primary lg">
+            <a href="/projects" className="btn btn-primary lg  enhanced">
               See More of My Projects
               <ArrowRight/>
             </a>

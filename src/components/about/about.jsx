@@ -49,7 +49,7 @@ const About = () => {
             applications that make a meaningful impact.
           </p>
 
-          <a href="#contact" class="btn btn-primary">
+          <a href="#contact" class="btn btn-primary  enhanced">
             Let's Talk
             <Send />
           </a>

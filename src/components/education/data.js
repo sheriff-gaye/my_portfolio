@@ -8,6 +8,16 @@ export const educationData = [
         desc: "Relevant Courses - Database Management for Business , Computer Operating System , Introduction to Programming , Mobile Application Design , Introduction to Business Analytics  , Management Information Systems , Internet Technology for Business , Networking & Security , Web Application Design , Decsion Support Systems , System Analysis Design",
         image: require("../../assets/knust.png")
     },
+    {
+        id: 22,
+        category: "education",
+        date: "Feb 2024 -  Present",
+        title: "Machine Learning",
+        place: "(Remote)",
+        desc: "Python , Pandas , Matplotlip , Sickit Learn , Numpy  , ML Ops",
+        image: require("../../assets/datacamp.png")
+
+    },
     
     {
         id: 2,
@@ -19,7 +29,6 @@ export const educationData = [
         image: require("../../assets/alx.jpeg")
 
     },
-    
 
     {
         id: 3,
@@ -54,7 +63,7 @@ export const educationData = [
     {
         id: 15,
         category: "work",
-        date: "Feb 2025 - Present",
+        date: "Feb 2025 - Aug 2025",
         title: "Software Engineer",
         place: "Nafa Financial Services",
         desc: "Building fintech mobile applications using Flutter, clean architecture, and GraphQL to support digital financial services. Developing scalable and efficient solutions to enhance customer experience. Creating secure and dynamic platforms that streamline financial operations for businesses.",
@@ -75,24 +84,14 @@ export const educationData = [
     {
         id: 6,
         category: "work",
-        date: "Mar 2023 - Present",
-        title: "Co Founder & Software Engineer",
+        date: "Mar 2023 -  Apr 2024",
+        title: "Software Engineer",
         place: "Fuller Developers",
         desc: "Offering mentorship and business solutions to Mastercard Scholar entrepreneurs, providing technical guidance and support for their ventures.",
         image: require("../../assets/fuller2.png")
 
     },
 
-    // {
-    //     id: 10,
-    //     category: "work",
-    //     date: "Aug 2024 - Oct 2024 ",
-    //     title: "Software Engineering Fellow",
-    //     place: "Headstarter ",
-    //     desc: "Developed 5 AI solutions project with team using Pinecone, Next Js ,Typescript , Firebase , and JavaScript . Collaborated on a team to created an AI pantry system for smart kitchen using Gemini , Open AI , and Claude. Optimized Projects using professional feedback from software engineers from Google, Meta , and Amazon",
-    //     image: require("../../assets/download.jpeg")
-
-    // },
     {
         id: 7,
         category: "work",
