@@ -188,8 +188,8 @@ Keep Innovation 🙌
 
   {
     id: 13,
-    featured: true,
-    title: "NASA Space Apps Challenge",
+    featured: false,
+    title: "NASA Space Apps 2025",
     dateCreated: "04/05/2025",
     tags: ["Hackathon", "Innovation", "Space Tech", "Collaboration"],
     content: `
@@ -202,7 +202,46 @@ The energy, teamwork, and creativity from all the participants were beyond inspi
 Big shoutout to our local lead Malik Kolawole Lanlokun and the volunteers Modou Lamin Jagne , Ibrahim Sissoho , Victoria Chizoba Okwuanalu and the entire team for bringing such a fantastic initiative to our community. 
       `,
     image: require("../../assets/blog/IMG_4861 2.jpeg")
-  }
+  },
+
+   {
+    id: 14,
+    featured: true,
+    title: "Scholars Council Meeting",
+    dateCreated: "22/10/2025",
+    tags: ["BaobabRising", "BaobabSummit2025","MastercardFoundation","ScholarsProgram","Leadership YouthEmpowerment"],
+    content: `
+After the Baobab Summit 2025, I attended the Scholars Council Meeting, where representatives from Mastercard Foundation Scholars Programs across the world met to discuss ways to enhance the Scholars Program experience.
+
+It was inspiring to engage with leaders, partner program managers, and directors committed to empowering young people across the continent.    
+
+`,
+    image: require("../../assets/blog/IMG_6022.jpg")
+  },
+   {
+    id: 15,
+    featured: true,
+    title: "Baobab Summit 2025",
+    dateCreated: "19/10/2025",
+    tags: ["BaobabRising", "BaobabSummit2025","MastercardFoundation","ScholarsProgram","Leadership YouthEmpowerment"],
+    content: `
+Attending the Baobab Summit 2025 in Nairobi, Kenya, was a truly inspiring experience under the theme “Baobab Rising: Nurturing the Future Through Africa’s Youth.”
+
+As a Baobab Ambassador and Mastercard Foundation Scholar Alumni from KNUST, I had the privilege to connect with passionate young leaders from across Africa — all united by a shared vision to build a more inclusive and empowered continent.
+
+Day 1 focused on leadership and purpose, setting the tone for collaboration and innovation.
+Day 2 brought reflection and connection, ending with a vibrant cultural dinner celebrating Africa’s rich diversity.
+Day 3 was filled with emotions as we bid farewell to Reeta Roy, whose inspiring leadership continues to guide us in shaping Africa’s future.
+
+The summit reminded me of the power of community, youth, and shared purpose. I left Nairobi renewed in my commitment to empower young Africans through mentorship, education, and technology.
+`,
+    image: require("../../assets/blog/IMG_5149.jpeg")
+  },
+  
+  
 ];
 
 export default blogData;
+
+
+

@@ -2,10 +2,11 @@ export const volunteerData = [
     {
         id: 1,
         category: "volunteering",
-        date: "Jan 2023 - Present",
-        title: "Your Volunteer Role",
+        date: "Jun 2025 - Present",
+        title: "Technical Lead",
         place: "Organization Name",
-        desc: "Description...",
+               desc: "Created single page applications, dashboards, CRUD applications, and full-stack web applications. Acquired experience in Software Development and technical environments, including exposure to GitHub and Database Management.",
+
         image: require("../../assets/alx.jpeg")
 
     },
@@ -15,7 +16,8 @@ export const volunteerData = [
         date: "Sep 2022 - Dec 2023",
         title: "Leadership Position",
         place: "Organization",
-        desc: "Description...",
+               desc: "Created single page applications, dashboards, CRUD applications, and full-stack web applications. Acquired experience in Software Development and technical environments, including exposure to GitHub and Database Management.",
+
         image: require("../../assets/alx.jpeg")
 
     }

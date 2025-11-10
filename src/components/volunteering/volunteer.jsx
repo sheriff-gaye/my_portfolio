@@ -14,7 +14,7 @@ const VolunteerLeadership = () => {
           <h3>
             <FaHandsHelping className="volunteer_icon" /> 
             <MdLeaderboard className="volunteer_icon" /> 
-            My Contributions
+            Social Impact
           </h3>
           <div className="volunteer_timeline">
             {volunteerData.map((item) => {

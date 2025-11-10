@@ -1,4 +1,4 @@
-import { ArrowLeft, Calendar, User, Share2, Clock, Tag, Heart, MessageCircle } from "lucide-react";
+import { ArrowLeft, Calendar, Tag } from "lucide-react";
 import { useParams, Link } from "react-router-dom";
 import { useEffect } from "react";
 import blogData from "./data";
@@ -49,8 +49,8 @@ const useReadingProgress = () => {
 };
 
 const BlogDetails = () => {
-  const { id } = useParams();
-  const blog = blogData.find((item) => item.id === parseInt(id));
+  const { title } = useParams();
+  const blog = blogData.find((item) => item.title === title);
   
   useReadingProgress();
 
@@ -69,34 +69,9 @@ const BlogDetails = () => {
     );
   }
 
-  const readingTime = Math.ceil(blog.content.split(' ').length / 200);
 
-  const handleShare = async () => {
-    const shareBtn = document.querySelector('.share-btn.enhanced');
-    
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: blog.title,
-          text: `Check out this article: ${blog.title}`,
-          url: window.location.href,
-        });
-      } catch (err) {
-        console.log('Error sharing:', err);
-      }
-    } else {
-      navigator.clipboard.writeText(window.location.href);
-      shareBtn.classList.add('sharing');
-      shareBtn.innerHTML = '<span>✓</span> Copied!';
-      
-      setTimeout(() => {
-        shareBtn.classList.remove('sharing');
-        shareBtn.innerHTML = '<Share2 size={16} /> Share';
-      }, 2000);
-    }
-  };
 
-  // Get related posts (exclude current post)
+
   const relatedPosts = blogData
     .filter(post => post.id !== blog.id)
     .slice(0, 3);
@@ -116,54 +91,11 @@ const BlogDetails = () => {
         </nav>
 
         {/* Enhanced Header */}
-        <header className="blog-details-header enhanced">
-          <div className="blog-category-badge">
-            <Tag size={16} />
-            {blog.tags[0] || 'Article'}
-          </div>
-          
-          <h1 className="blog-details-title">{blog.title}</h1>
-          
-          {/* Enhanced Meta Information */}
-          <div className="blog-details-meta enhanced">
-            <div className="author-info">
-              <div className="author-avatar">
-                <User size={24} />
-              </div>
-              <div className="author-details">
-                <div className="author-name">Gaye Tech</div>
-                <div className="author-role">Software Engineer & Writer</div>
-              </div>
-            </div>
-            
-            <div className="meta-right">
-              <div className="meta-item">
-                <Calendar size={16} />
-                <span>{blog.dateCreated}</span>
-              </div>
-              <div className="meta-item">
-                <Clock size={16} />
-                <span>{readingTime} min read</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Enhanced Actions */}
-          <div className="blog-actions enhanced">
-            <div className="reading-progress">
-              <div className="progress-bar">
-                <div className="progress-fill" style={{width: '0%'}}></div>
-              </div>
-            </div>
-            <button onClick={handleShare} className="share-btn enhanced">
-              <Share2 size={16} />
-              Share
-            </button>
-          </div>
-        </header>
+       
 
         {/* Enhanced Content */}
         <div className="blog-details-content enhanced">
+            <h1 className="blog-details-title">{blog.title}</h1>
           <div className="blog-image enhanced">
             <img src={blog.image} alt={blog.title} />
             <div className="image-caption">

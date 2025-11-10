@@ -1,12 +1,11 @@
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export const BlogCard = ({ blogs }) => {
   const navigate = useNavigate();
 
-  const handleCardClick = (id) => {
-    navigate(`/blog/${id}`);
+  const handleCardClick = (title) => {
+    navigate(`/blog/${title}`);
   };
 
   const truncateContent = (content, maxLength = 140) => {
@@ -25,12 +24,12 @@ export const BlogCard = ({ blogs }) => {
         <article
           className="blog-card enhanced"
           key={blog.id}
-          onClick={() => handleCardClick(blog.id)}
+          onClick={() => handleCardClick(blog.title)}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {
-              handleCardClick(blog.id);
+              handleCardClick(blog.title);
             }
           }}
         >

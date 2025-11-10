@@ -36,7 +36,7 @@ const HomeBlog = () => {
           </div>
 
           <div className="featured-grid">
-            <Link to={`/blog/${featuredPost.id}`} className="featured-card main-featured">
+            <Link to={`/blog/${featuredPost.title}`} className="featured-card main-featured">
               <div className="featured-image">
                 <img src={featuredPost.image} alt={featuredPost.title} />
                 <div className="featured-overlay"></div>

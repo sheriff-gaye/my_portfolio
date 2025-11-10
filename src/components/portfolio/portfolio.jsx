@@ -21,7 +21,7 @@ const Portfolio = () => {
   );
 
   const displayData = isNotProject 
-    ? filteredData.slice(0, 6) 
+    ? filteredData.slice(0, 3) 
     : filteredData;
   return (
     <section id="portfolio">
