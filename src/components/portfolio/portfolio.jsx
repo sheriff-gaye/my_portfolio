@@ -52,7 +52,7 @@ const Portfolio = () => {
                 {/* Image */}
                 <div
                   className="portfolio_item-image"
-                  data-index={String(index + 1).padStart(2, "0")}
+                 
                 >
                   <img src={image} alt={title} />
                   <span className="category-badge">{category}</span>

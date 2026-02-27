@@ -7,10 +7,6 @@
 }
 
 
-
-/* ===== HEADING ===== */
-
-
 #portfolio h2 {
   text-align: center;
   color: var(--color-white);
@@ -25,8 +21,6 @@
   display: inline-block;
 }
 
-
-/* ===== FILTERS ===== */
 .filters {
   display: flex;
   flex-direction: row;
@@ -163,22 +157,7 @@
   filter: saturate(1) brightness(0.95);
 }
 
-/* Number badge */
-.portfolio_item-image::before {
-  content: attr(data-index);
-  position: absolute;
-  top: 0.75rem;
-  left: 0.75rem;
-  font-size: 0.65rem;
-  color: var(--color-primary);
-  background: rgba(31, 31, 56, 0.85);
-  border: 1px solid rgba(77, 181, 255, 0.3);
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.2rem;
-  letter-spacing: 0.1em;
-  backdrop-filter: blur(6px);
-  z-index: 2;
-}
+
 
 /* Category pill */
 .category-badge {
