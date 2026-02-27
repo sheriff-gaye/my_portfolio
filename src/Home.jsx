@@ -9,6 +9,7 @@ import Education from "./components/education/education";
 import HomeBlog from "./components/blog/HomeBlog";
 import Banner from "./banner/banner";
 import VolunteerLeadership from "./components/volunteering/volunteer";
+// import HireCTA from "./components/cta/cta";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Portfolio />
       <HomeBlog />
       <Testimonial />
+      {/* <HireCTA/> */}
       <Contact />
     </div>
   );

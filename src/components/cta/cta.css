@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap');
+
+/* ===== CTA SECTION ===== */
+#hire-cta {
+  margin-top: 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* ===== SECTION LABEL ===== */
+.cta-section-label {
+  text-align: center;
+  font-size: 0.72rem;
+  letter-spacing: 0.35em;
+  color: var(--color-primary);
+  margin-bottom: 0.6rem;
+}
+
+.cta-section-title {
+  text-align: center;
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: -0.03em;
+  margin-bottom: 3.5rem;
+  line-height: 1.1;
+}
+
+.cta-section-title span {
+  color: var(--color-primary);
+}
+
+/* ===== MAIN CARD ===== */
+.cta-card {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  border: 1px solid rgba(77, 181, 255, 0.12);
+  background: var(--color-bg-variant);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cta-card:hover {
+  border-color: rgba(77, 181, 255, 0.28);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(77, 181, 255, 0.1);
+}
+
+/* ===== LEFT — IMAGE PANEL ===== */
+.cta-image-panel {
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+}
+
+.cta-image-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.9s cubic-bezier(0.23, 1, 0.32, 1), filter 0.5s ease;
+  filter: saturate(0.75) brightness(0.8);
+}
+
+.cta-card:hover .cta-image-panel img {
+  transform: scale(1.04);
+  filter: saturate(0.9) brightness(0.9);
+}
+
+
+.availability-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(77, 181, 255, 0.2);
+  border-radius: 2rem;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.availability-badge .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  flex-shrink: 0;
+  animation: pulse-dot 2s ease infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.75); }
+}
+
+
+.cta-image-stat .stat-number {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.cta-image-stat .stat-number span {
+  color: var(--color-primary);
+}
+
+.cta-image-stat .stat-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.2rem;
+}
+
+/* ===== RIGHT — CONTENT PANEL ===== */
+.cta-content-panel {
+  padding: 3rem 3rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+.cta-intro .eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 0.8rem;
+}
+
+.cta-intro h3 {
+  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-weight: 800;
+  color: var(--color-light);
+ 
+}
+
+
+/* ===== TRAITS GRID ===== */
+.traits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.trait-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+
+
+.trait-text .trait-desc {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ===== CTA BUTTONS ===== */
+.cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-actions .btn-hire {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border: 1px solid var(--color-primary);
+  border-radius: 0.35rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-actions .btn-hire::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(-100%) skewX(-12deg);
+  transition: transform 0.4s ease;
+}
+
+.cta-actions .btn-hire:hover::before {
+  transform: translateX(110%) skewX(-12deg);
+}
+
+.cta-actions .btn-hire:hover {
+  box-shadow: 0 0 30px rgba(77, 181, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.cta-actions .btn-resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.35rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-actions .btn-resume:hover {
+  border-color: rgba(77, 181, 255, 0.4);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.cta-actions .btn-hire svg,
+.cta-actions .btn-resume svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ===== DIVIDER LINE ===== */
+.cta-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(77, 181, 255, 0.2) 30%,
+    rgba(77, 181, 255, 0.2) 70%,
+    transparent
+  );
+}
+
+/* ===== QUICK STATS ROW ===== */
+.cta-stats-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cta-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-stat .num {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.cta-stat .num span {
+  color: var(--color-primary);
+}
+
+.cta-stat .lbl {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: 0.2rem;
+}
+
+.cta-stat-sep {
+  width: 1px;
+  height: 2.5rem;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 1024px) {
+  .cta-card {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-image-panel {
+    min-height: 360px;
+  }
+
+  .cta-image-panel::after {
+    background: linear-gradient(
+      to bottom,
+      transparent 40%,
+      rgba(31, 31, 56, 0.9) 100%
+    );
+  }
+
+  .cta-content-panel {
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cta-image-panel {
+    min-height: 280px;
+  }
+
+  .traits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content-panel {
+    padding: 2rem 1.5rem;
+  }
+
+  .cta-stats-row {
+    gap: 1.2rem;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-actions .btn-hire,
+  .cta-actions .btn-resume {
+    justify-content: center;
+  }
+}

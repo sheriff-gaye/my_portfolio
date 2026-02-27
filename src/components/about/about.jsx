@@ -3,7 +3,7 @@ import "./about.css";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
-import Me from "../../assets/IMG_4513.jpg";
+import Me from "../../assets/IMG_2104.jpeg";
 import { Send } from "lucide-react";
 
 const About = () => {
