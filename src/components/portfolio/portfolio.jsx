@@ -1,104 +1,116 @@
 import React, { useState } from "react";
 import "./portfolio.css";
 import { portfolio_data } from "./info";
-import { ArrowRight, ExternalLink, Filter, Github,  } from "lucide-react";
+import { ArrowRight, ExternalLink, Github, Layers } from "lucide-react";
+
+const CATEGORIES = [
+  { key: "all", label: "All" },
+  { key: "fullstack", label: "Full Stack" },
+  { key: "frontend", label: "Frontend" },
+  { key: "ecommerce", label: "E-commerce" },
+  { key: "education", label: "Education" },
+];
 
 const Portfolio = () => {
-  const [activeFilter, setActiveFilter] = useState('all');
-  const [isNotProject] = useState(true);
+  const [activeFilter, setActiveFilter] = useState("all");
+  const isPreview = true; 
 
-  const categories = [
-    { key: 'all', label: 'All' },
-    { key: 'fullstack', label: 'Full Stack' },
-    { key: 'frontend', label: 'Frontend' },
-    { key: 'ecommerce', label: 'E-commerce' },
-    { key: 'education', label: 'Education' }
-  ];
-
-  // Filter data
-  const filteredData = portfolio_data.filter(item => 
-    activeFilter === 'all' || item.category === activeFilter
+  const filteredData = portfolio_data.filter(
+    (item) => activeFilter === "all" || item.category === activeFilter
   );
 
-  const displayData = isNotProject 
-    ? filteredData.slice(0, 3) 
-    : filteredData;
+  const displayData = isPreview ? filteredData.slice(0, 3) : filteredData;
+
   return (
     <section id="portfolio">
-         
+      <h2>
+        Featured <span>&#123;Projects&#125;</span>
+      </h2>
 
-      <h5>My Recent Works</h5>
-      <h2>Featured <span>&#123;Projects&#125;</span></h2>
-
+      {/* Filters */}
       <div className="filters">
-        {categories.map((category) => (
+        {CATEGORIES.map((cat) => (
           <button
-            key={category.key}
-            onClick={() => setActiveFilter(category.key)}
-            className={`filter-btn ${activeFilter === category.key ? 'active' : ''}`}
+            key={cat.key}
+            onClick={() => setActiveFilter(cat.key)}
+            className={`filter-btn ${activeFilter === cat.key ? "active" : ""}`}
           >
-            <Filter size={16} />
-            {category.label}
+            <Layers size={12} />
+            {cat.label}
           </button>
         ))}
       </div>
 
-
+      {/* Grid */}
       <div className="container portfolio_container">
-        {displayData.map(
-          ({ id, image, title, desc, demo_url, git_url, stack }) => {
-            return (
-              <article className="portfolio_item" key={id}>
-                <div className="portfolio_item-image">
-                  <img src={image} alt="portfolio_image" />
-                </div>
-                <h3>{title}</h3>
-
-                <p>{desc}</p>
-
-                <div className="stack-container">
-                  {stack.split(',').map((tech, index) => (
-                    <span key={index} className="stack-tag">
-                      {tech.trim()}
-                    </span>
-                  ))}
+        {displayData.length === 0 ? (
+          <p className="portfolio-empty">No projects in this category yet.</p>
+        ) : (
+          displayData.map(
+            ({ id, image, title, desc, demo_url, git_url, stack, category }, index) => (
+              <article className="portfolio_item" key={`${id}-${index}`}>
+                {/* Image */}
+                <div
+                  className="portfolio_item-image"
+                  data-index={String(index + 1).padStart(2, "0")}
+                >
+                  <img src={image} alt={title} />
+                  <span className="category-badge">{category}</span>
                 </div>
 
+                {/* Body */}
+                <div className="portfolio_item-body">
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
 
+                  {/* Stack Tags */}
+                  <div className="stack-container">
+                    {stack.split(",").map((tech, i) => (
+                      <span key={i} className="stack-tag">
+                        {tech.trim()}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* CTAs */}
                 <div className="portfolio_item-cta">
                   {git_url && (
                     <a
                       href={git_url}
-                      className="btn  enhanced"
+                      className="btn"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label={`${title} GitHub repository`}
                     >
-                      <Github/>
-                      Github
+                      <Github size={14} />
+                      Source
                     </a>
                   )}
                   {demo_url && (
                     <a
-                      href={demo_url} 
-                      className="btn btn-primary  enhanced"
+                      href={demo_url}
+                      className="btn btn-primary"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label={`${title} live demo`}
                     >
-                      <ExternalLink />
+                      <ExternalLink size={14} />
                       Live Demo
                     </a>
                   )}
                 </div>
               </article>
-            );
-          }
+            )
+          )
         )}
 
-        {isNotProject && (
-          <div>
-            <a href="/projects" className="btn btn-primary lg  enhanced">
-              See More of My Projects
-              <ArrowRight/>
+        {/* See More */}
+        {isPreview && (
+          <div className="see-more-wrapper">
+            <a href="/projects" className="btn btn-primary">
+              See All Projects
+              <ArrowRight size={16} />
             </a>
           </div>
         )}

@@ -1,12 +1,8 @@
 import React from "react";
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
-// import { bcms } from "../../bcms";
 
 const Experience = () => {
-  // const skills = bcms.entry.getAll("skills")
-  // console.log(skills)
-
   return (
     <section id="experience">
       <h5>What Skills I have</h5>
