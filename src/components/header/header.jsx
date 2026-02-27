@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./header.css";
 import CTA from "./cta";
-import Me from "../../assets/sheriff.png";
+import Me from "../../assets/aa.png";
 import BackgroundVideo from "./videoplayer";
 import AllFavTechs from "./AllFavTechs";
 

@@ -42,6 +42,17 @@ export const educationData = [
 
     },
     {
+        id: 14,
+        category: "work",
+        date: "Jan 2026 - Present",
+        title: "Application Developer",
+        place: "Medical Research Council The Gambia",
+        desc: "",
+        image: require("../../assets/mrc.jpeg")
+
+    },
+
+     {
         id: 15,
         category: "work",
         date: "Feb 2025 - Aug 2025",

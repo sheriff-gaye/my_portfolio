@@ -1,4 +1,3 @@
-import { FaHandsHelping } from "react-icons/fa";
 import { MdLeaderboard } from "react-icons/md";
 import "./volunteer.css";
 import { volunteerData } from "./data";
@@ -12,7 +11,7 @@ const VolunteerLeadership = () => {
       <div className="volunteer_container container">
         <div className="volunteer_section">
           <h3>
-            <FaHandsHelping className="volunteer_icon" /> 
+            
             <MdLeaderboard className="volunteer_icon" /> 
             Social Impact
           </h3>

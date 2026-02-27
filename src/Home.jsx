@@ -8,6 +8,7 @@ import Contact from "./components/contact/contact";
 import Education from "./components/education/education";
 import HomeBlog from "./components/blog/HomeBlog";
 import Banner from "./banner/banner";
+import VolunteerLeadership from "./components/volunteering/volunteer";
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
       <About />
       <Experience />
       <Education />
-        {/* <VolunteerLeadership/> */}
+        <VolunteerLeadership/>
       <Portfolio />
       <HomeBlog />
       <Testimonial />
